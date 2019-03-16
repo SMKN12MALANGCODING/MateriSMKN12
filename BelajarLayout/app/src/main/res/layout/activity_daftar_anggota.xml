@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".day5.DaftarAnggotaActivity"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_margin="10dp">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textSize="19sp"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtName"
+            android:inputType="text"
+            android:hint="Nama"/>
+    <Spinner android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+            android:id="@+id/spinnerGender"
+            android:entries="@array/gender_list">
+    </Spinner>
+    <EditText android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:hint="Email"
+              android:inputType="textEmailAddress"
+              android:id="@+id/edtEmail"/>
+    <EditText android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:hint="Telepon"
+              android:inputType="phone"
+              android:id="@+id/edtTelp"/>
+    <EditText android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:hint="Address"
+              android:inputType="textMultiLine"
+              android:id="@+id/edtAddress"/>
+    <Button android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnSave"
+            android:text="Save"/>
+
+</LinearLayout>
